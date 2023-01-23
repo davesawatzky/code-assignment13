@@ -8,15 +8,15 @@ export default {
   component: Radio,
   argTypes: {
     radioGroupName: {
-      defaultValue: 'radioGroup',
+      defaultValue: 'radioGroup'
     },
     options: {
-      defaultValue: ['Huey', 'Dewy', 'Lewy'],
+      defaultValue: ['Huey', 'Dewy', 'Lewy']
     },
     title: {
-      defaultValue: 'The Ducks',
-    },
-  },
+      defaultValue: 'The Ducks'
+    }
+  }
 } as Meta<typeof Radio>
 
 const Template: Story<RadioProps> = (args) => <Radio {...args} />
@@ -27,7 +27,7 @@ Primary.args = {
   disabled: false,
   title: 'The Ducks',
   options: ['Huey', 'Dewy', 'Lewy'],
-  radioGroupName: 'radioGroup',
+  radioGroupName: 'radioGroup'
 }
 
 export const Error = Template.bind({})
@@ -37,7 +37,7 @@ Error.args = {
   errorMessage: 'Error in Radio Group',
   title: 'The Ducks',
   options: ['Huey', 'Dewy', 'Lewy'],
-  radioGroupName: 'radioGroup',
+  radioGroupName: 'radioGroup'
 }
 
 export const Disabled = Template.bind({})
@@ -47,5 +47,5 @@ Disabled.args = {
   label: 'Disabled',
   title: 'The Ducks',
   options: ['Huey', 'Dewy', 'Lewy'],
-  radioGroupName: 'radioGroup',
+  radioGroupName: 'radioGroup'
 }

@@ -1,4 +1,5 @@
 # Coding Assignment 12
+
 # David Sawatzky
 
 Build the docker image with:

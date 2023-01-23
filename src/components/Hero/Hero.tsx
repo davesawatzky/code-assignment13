@@ -12,8 +12,7 @@ const StyledHero = styled.div<HeroProps>`
   padding: 30px;
   justify-items: center;
   align-content: center;
-  color: ${(props) =>
-    props.disabled ? '#e4e3ea' : props.error ? '#a9150b' : '#080808'};
+  color: ${(props) => (props.disabled ? '#e4e3ea' : props.error ? '#a9150b' : '#080808')};
   /* background-image: url('src/assets/field.jpg'); */
   background-image: url(${(props) => (props.image ? props.image : blankImage)});
   background-color: ${(props) => (props.disabled ? '#e4e4e475' : '')};
@@ -31,13 +30,11 @@ const StyledTextBlock = styled.div<HeroProps>`
   justify-items: center;
 `
 const StyledH1 = styled.h1<HeroProps>`
-  color: ${(props) =>
-    props.disabled ? '#e4e3ea' : props.error ? '#a9150b' : '#080808'};
+  color: ${(props) => (props.disabled ? '#e4e3ea' : props.error ? '#a9150b' : '#080808')};
 `
 
 const StyledH2 = styled.h2<HeroProps>`
-  color: ${(props) =>
-    props.disabled ? '#e4e3ea' : props.error ? '#a9150b' : '#080808'};
+  color: ${(props) => (props.disabled ? '#e4e3ea' : props.error ? '#a9150b' : '#080808')};
 `
 
 const Hero: FC<HeroProps> = ({

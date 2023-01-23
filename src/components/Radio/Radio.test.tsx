@@ -49,7 +49,7 @@ test('check for the error state in the radio component', () => {
   )
   screen.getAllByRole('radio', { checked: false }).map((el) => {
     expect(el).toHaveStyle({
-      border: '2px solid #a9150b',
+      border: '2px solid #a9150b'
     })
   })
 })

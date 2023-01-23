@@ -6,7 +6,7 @@ import { CardProps } from './Card.types'
 export default {
   title: 'Sawatzky/Card',
   component: Card,
-  argTypes: {},
+  argTypes: {}
 } as Meta<typeof Card>
 
 const Template: Story<CardProps> = (args) => <Card {...args} />
@@ -17,7 +17,7 @@ Primary.args = {
   disabled: false,
   cardHeadingText: 'Type in a heading',
   cardSubText: 'Type in a sub heading',
-  cardText: 'Type in some text',
+  cardText: 'Type in some text'
 }
 
 export const Error = Template.bind({})
@@ -26,7 +26,7 @@ Error.args = {
   disabled: false,
   cardHeadingText: 'Type in a heading',
   cardSubText: 'Type in a sub heading',
-  cardText: 'Type in some text',
+  cardText: 'Type in some text'
 }
 export const Disabled = Template.bind({})
 Disabled.args = {
@@ -34,5 +34,5 @@ Disabled.args = {
   disabled: true,
   cardHeadingText: 'Type in a heading',
   cardSubText: 'Type in a sub heading',
-  cardText: 'Type in some text',
+  cardText: 'Type in some text'
 }

@@ -18,7 +18,7 @@ describe('Running Test for Label', () => {
     render(<Label data-testid='label' error />)
     expect(screen.getByTestId('label')).toHaveStyle({
       color: '#a9150b',
-      'font-weight': '700',
+      'font-weight': '700'
     })
   })
 })

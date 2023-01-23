@@ -6,7 +6,7 @@ import { TableRowProps } from './TableRow.types'
 export default {
   title: 'Sawatzky/Table/TableRow',
   component: TableRow,
-  argTypes: {},
+  argTypes: {}
 } as Meta<typeof TableRow>
 
 const Template: Story<TableRowProps> = (args) => <TableRow {...args} />
@@ -20,7 +20,7 @@ Primary.args = {
       <td>Cell 1</td>
       <td>Cell 2</td>
     </>
-  ),
+  )
 }
 
 export const Error = Template.bind({})
@@ -32,7 +32,7 @@ Error.args = {
       <td>Cell 1</td>
       <td>Cell 2</td>
     </>
-  ),
+  )
 }
 
 export const Disabled = Template.bind({})
@@ -44,5 +44,5 @@ Disabled.args = {
       <td>Cell 1</td>
       <td>Cell 2</td>
     </>
-  ),
+  )
 }

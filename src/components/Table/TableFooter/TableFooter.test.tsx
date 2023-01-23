@@ -11,7 +11,7 @@ describe('Running Test for Table Footer', () => {
           footer={[
             { name: 'One', columnSpan: 1 },
             { name: 'Two and Three', columnSpan: 2 },
-            { name: 'Four', columnSpan: 4 },
+            { name: 'Four', columnSpan: 4 }
           ]}
           footerColor={'blue'}
         ></TableFooter>
@@ -28,15 +28,13 @@ describe('Running Test for Table Footer', () => {
           footer={[
             { name: 'One', columnSpan: 1 },
             { name: 'Two and Three', columnSpan: 2 },
-            { name: 'Four', columnSpan: 4 },
+            { name: 'Four', columnSpan: 4 }
           ]}
           footerColor={'blue'}
         ></TableFooter>
       </table>
     )
-    expect(screen.getByRole('rowgroup')).toHaveStyle(
-      'background-color : #cecdcd'
-    )
+    expect(screen.getByRole('rowgroup')).toHaveStyle('background-color : #cecdcd')
   })
 
   test('Check Table Footer shows error', () => {
@@ -47,14 +45,12 @@ describe('Running Test for Table Footer', () => {
           footer={[
             { name: 'One', columnSpan: 1 },
             { name: 'Two and Three', columnSpan: 2 },
-            { name: 'Four', columnSpan: 4 },
+            { name: 'Four', columnSpan: 4 }
           ]}
           footerColor={'blue'}
         ></TableFooter>
       </table>
     )
-    expect(screen.getByRole('rowgroup')).toHaveStyle(
-      'background-color : #ff5b4f'
-    )
+    expect(screen.getByRole('rowgroup')).toHaveStyle('background-color : #ff5b4f')
   })
 })

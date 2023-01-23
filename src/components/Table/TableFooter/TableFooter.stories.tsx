@@ -6,7 +6,7 @@ import { TableFooterProps } from './TableFooter.types'
 export default {
   title: 'Sawatzky/Table/TableFooter',
   component: TableFooter,
-  argTypes: {},
+  argTypes: {}
 } as Meta<typeof TableFooter>
 
 const Template: Story<TableFooterProps> = (args) => <TableFooter {...args} />
@@ -18,9 +18,9 @@ Primary.args = {
   footer: [
     { name: 'Footer 1', columnSpan: 1 },
     { name: 'Footer 2 & 3', columnSpan: 2 },
-    { name: 'Footer 4', columnSpan: 1 },
+    { name: 'Footer 4', columnSpan: 1 }
   ],
-  footerColor: '#30e1ee',
+  footerColor: '#30e1ee'
 }
 
 export const Error = Template.bind({})
@@ -30,9 +30,9 @@ Error.args = {
   footer: [
     { name: 'Footer 1', columnSpan: 1 },
     { name: 'Footer 2 & 3', columnSpan: 2 },
-    { name: 'Footer 4', columnSpan: 1 },
+    { name: 'Footer 4', columnSpan: 1 }
   ],
-  footerColor: '#ff5b4f',
+  footerColor: '#ff5b4f'
 }
 
 export const Disabled = Template.bind({})
@@ -42,7 +42,7 @@ Disabled.args = {
   footer: [
     { name: 'Footer 1', columnSpan: 1 },
     { name: 'Footer 2 & 3', columnSpan: 2 },
-    { name: 'Footer 4', columnSpan: 1 },
+    { name: 'Footer 4', columnSpan: 1 }
   ],
-  footerColor: '#cecdcd',
+  footerColor: '#cecdcd'
 }

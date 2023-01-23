@@ -14,12 +14,7 @@ const StyledTableFooterCell = styled.th<TableFooterProps>`
   border: 1px solid black;
 `
 
-const TableFooter: FC<TableFooterProps> = ({
-  footer,
-  disabled,
-  error,
-  footerColor,
-}) => {
+const TableFooter: FC<TableFooterProps> = ({ footer, disabled, error, footerColor }) => {
   return (
     <StyledTableFooter
       role={'rowgroup'}

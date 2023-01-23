@@ -8,12 +8,12 @@ export default {
   component: Dropdown,
   argTypes: {
     label: {
-      defaultValue: 'Primary',
+      defaultValue: 'Primary'
     },
     options: {
-      defaultValue: ['Up', 'Down'],
-    },
-  },
+      defaultValue: ['Up', 'Down']
+    }
+  }
 } as Meta<typeof Dropdown>
 
 const Template: Story<DropdownProps> = (args) => <Dropdown {...args} />
@@ -23,7 +23,7 @@ Primary.args = {
   error: false,
   disabled: false,
   label: 'Primary',
-  options: ['Up', 'Down'],
+  options: ['Up', 'Down']
 }
 
 export const Success = Template.bind({})
@@ -32,7 +32,7 @@ Success.args = {
   success: true,
   disabled: false,
   label: 'Success',
-  options: ['Up', 'Down'],
+  options: ['Up', 'Down']
 }
 
 export const Error = Template.bind({})
@@ -40,12 +40,12 @@ Error.args = {
   error: true,
   disabled: false,
   message: 'Error',
-  options: ['Up', 'Down'],
+  options: ['Up', 'Down']
 }
 
 export const Disabled = Template.bind({})
 Disabled.args = {
   disabled: true,
   label: 'Disabled',
-  options: ['Up', 'Down'],
+  options: ['Up', 'Down']
 }

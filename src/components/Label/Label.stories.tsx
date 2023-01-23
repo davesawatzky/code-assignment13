@@ -6,7 +6,7 @@ import { LabelProps } from './Label.types'
 export default {
   title: 'Sawatzky/Label',
   component: Label,
-  argTypes: {},
+  argTypes: {}
 } as Meta<typeof Label>
 
 const Template: Story<LabelProps> = (args) => <Label {...args} />
@@ -15,18 +15,18 @@ export const Primary = Template.bind({})
 Primary.args = {
   error: false,
   disabled: false,
-  text: 'Primary Label',
+  text: 'Primary Label'
 }
 
 export const Error = Template.bind({})
 Error.args = {
   error: true,
   disabled: false,
-  text: 'Error Label',
+  text: 'Error Label'
 }
 export const Disabled = Template.bind({})
 Disabled.args = {
   error: false,
   disabled: true,
-  text: 'Disabled Label',
+  text: 'Disabled Label'
 }

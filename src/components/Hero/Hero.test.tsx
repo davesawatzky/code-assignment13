@@ -34,8 +34,6 @@ describe('Running Test for Hero', () => {
         disabled
       />
     )
-    expect(screen.getByTestId('heroelement')).toHaveStyle(
-      'background-color: #e4e4e475'
-    )
+    expect(screen.getByTestId('heroelement')).toHaveStyle('background-color: #e4e4e475')
   })
 })

@@ -11,15 +11,11 @@ describe('Running Test for sawatzky TableCell', () => {
 
   test('Check TableCell Disabled', () => {
     render(<TableCell disabled>text</TableCell>)
-    expect(screen.getByRole('cell', { name: 'text' })).toHaveStyle(
-      'background-color : #cecdcd'
-    )
+    expect(screen.getByRole('cell', { name: 'text' })).toHaveStyle('background-color : #cecdcd')
   })
 
   test('Check TableCell has error', () => {
     render(<TableCell error>text</TableCell>)
-    expect(screen.getByRole('cell', { name: 'text' })).toHaveStyle(
-      'background-color : #ff5b4f'
-    )
+    expect(screen.getByRole('cell', { name: 'text' })).toHaveStyle('background-color : #ff5b4f')
   })
 })

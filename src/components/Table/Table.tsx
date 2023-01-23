@@ -16,15 +16,9 @@ const StyledTable = styled.table<TableProps>`
 
 const StyledTableBody = styled.tbody<TableProps>`
   border: 1px solid black;
-  background-color: ${(props) =>
-    props.disabled ? '#cecdcd' : props.error ? '#ff5b4f' : '#fff'};
+  background-color: ${(props) => (props.disabled ? '#cecdcd' : props.error ? '#ff5b4f' : '#fff')};
 `
-const TableBody: FC<TableProps> = ({
-  error,
-  disabled,
-  tableColor,
-  children,
-}) => {
+const TableBody: FC<TableProps> = ({ error, disabled, tableColor, children }) => {
   return (
     <StyledTableBody error={error} disabled={disabled} tableColor={tableColor}>
       {children}
@@ -39,14 +33,11 @@ const Table: FC<TableProps> = ({
   tableFooterData,
   tableData,
   error,
-  disabled,
+  disabled
 }) => {
   return (
     <StyledTable error={error} disabled={disabled}>
-      <TableHeader
-        headings={tableHeaderData}
-        headerColor={headerColor}
-      ></TableHeader>
+      <TableHeader headings={tableHeaderData} headerColor={headerColor}></TableHeader>
       <TableBody error={error} disabled={disabled}>
         {tableData?.map((rowData, i) => (
           <TableRow key={i} disabled={disabled} error={error}>
@@ -58,10 +49,7 @@ const Table: FC<TableProps> = ({
           </TableRow>
         ))}
       </TableBody>
-      <TableFooter
-        footer={tableFooterData}
-        footerColor={footerColor}
-      ></TableFooter>
+      <TableFooter footer={tableFooterData} footerColor={footerColor}></TableFooter>
     </StyledTable>
   )
 }

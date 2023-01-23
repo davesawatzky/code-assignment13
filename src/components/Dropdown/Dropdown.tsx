@@ -11,13 +11,7 @@ const StyledDropdown = styled.select<DropdownProps>`
   border-radius: 15px;
   border: solid 1px
     ${(props) =>
-      props.disabled
-        ? '#e4e3ea'
-        : props.error
-        ? '#d30e00'
-        : props.success
-        ? '#06af00'
-        : '#999999'};
+      props.disabled ? '#e4e3ea' : props.error ? '#d30e00' : props.success ? '#06af00' : '#999999'};
   background-color: ${(props) => (props.disabled ? '#e4e4e4' : '#fff')};
   :focus {
     border: solid 2px #023fc4;
@@ -38,8 +32,7 @@ const StyledMessage = styled.div<DropdownProps>`
 
 const StyledText = styled.p<DropdownProps>`
   margin: 0px;
-  color: ${(props) =>
-    props.disabled ? '#e4e3ea' : props.error ? '#a9150b' : '#080808'};
+  color: ${(props) => (props.disabled ? '#e4e3ea' : props.error ? '#a9150b' : '#080808')};
 `
 
 const StyledOptions = styled.option<DropdownProps>``

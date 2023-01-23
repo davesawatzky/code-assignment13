@@ -4,22 +4,16 @@ import { RadioProps } from './Radio.types'
 
 const StyledFieldSet = styled.fieldset<RadioProps>`
   border: ${(props) =>
-    props.disabled
-      ? '1px solid #a5a5a5'
-      : props.error
-      ? '1px solid #a9150b'
-      : '1px solid #999'};
+    props.disabled ? '1px solid #a5a5a5' : props.error ? '1px solid #a9150b' : '1px solid #999'};
   border-radius: 10px;
 `
 const StyledLegend = styled.legend<RadioProps>`
   font-size: 1rem;
-  color: ${(props) =>
-    props.disabled ? '#a5a5a5' : props.error ? '#a9150b' : '#080808'};
+  color: ${(props) => (props.disabled ? '#a5a5a5' : props.error ? '#a9150b' : '#080808')};
 `
 const StyledLabel = styled.label<RadioProps>`
   font-size: 1rem;
-  color: ${(props) =>
-    props.disabled ? '#a5a5a5' : props.error ? '#a9150b' : '#080808'};
+  color: ${(props) => (props.disabled ? '#a5a5a5' : props.error ? '#a9150b' : '#080808')};
   padding: 5px;
 `
 const StyledOption = styled.input<RadioProps>`
@@ -29,22 +23,14 @@ const StyledOption = styled.input<RadioProps>`
   width: 16px;
   height: 16px;
   border: ${(props) =>
-    props.disabled
-      ? '2px solid #a5a5a5'
-      : props.error
-      ? '2px solid #a9150b'
-      : '2px solid #999'};
+    props.disabled ? '2px solid #a5a5a5' : props.error ? '2px solid #a9150b' : '2px solid #999'};
   transition: 0.2s all linear;
   margin-right: 5px;
   position: relative;
   top: 4px;
   :checked {
     border: ${(props) =>
-      props.disabled
-        ? '6px solid #a5a5a5'
-        : props.error
-        ? '6px solid #a9150b'
-        : '6px solid blue'};
+      props.disabled ? '6px solid #a5a5a5' : props.error ? '6px solid #a9150b' : '6px solid blue'};
   }
 `
 const StyledErrorMessage = styled.p<RadioProps>`

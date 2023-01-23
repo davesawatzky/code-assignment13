@@ -8,13 +8,7 @@ const StyledInput = styled.input<InputProps>`
   border-radius: 3px;
   border: 1px solid
     ${(props) =>
-      props.disabled
-        ? '#e4e3ea'
-        : props.error
-        ? '#a9150b'
-        : props.success
-        ? '#067d68'
-        : '#353637'};
+      props.disabled ? '#e4e3ea' : props.error ? '#a9150b' : props.success ? '#067d68' : '#353637'};
   background-color: #fff;
   &:focus {
     border: solid 2px #1b116e;
@@ -35,8 +29,7 @@ const StyledMessage = styled.div<InputProps>`
 
 const StyledText = styled.p<InputProps>`
   margin: 0px;
-  color: ${(props) =>
-    props.disabled ? '#e4e3ea' : props.error ? '#a9150b' : '#080808'};
+  color: ${(props) => (props.disabled ? '#e4e3ea' : props.error ? '#a9150b' : '#080808')};
 `
 
 const Input: FC<InputProps> = ({

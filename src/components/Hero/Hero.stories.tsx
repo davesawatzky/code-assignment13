@@ -6,7 +6,7 @@ import { HeroProps } from './Hero.types'
 export default {
   title: 'Sawatzky/Hero',
   component: Hero,
-  argTypes: {},
+  argTypes: {}
 } as Meta<typeof Hero>
 
 const Template: Story<HeroProps> = (args) => <Hero {...args} />
@@ -23,7 +23,7 @@ Primary.args = {
   headingText: 'Hero Title',
   subText: 'Hero Subtitle',
   buttonText: 'Click Here',
-  primary: true,
+  primary: true
 }
 
 export const Error = Template.bind({})
@@ -38,7 +38,7 @@ Error.args = {
   headingText: 'Hero Title',
   subText: 'Hero Subtitle',
   buttonText: 'Click Here',
-  primary: false,
+  primary: false
 }
 export const Disabled = Template.bind({})
 Disabled.args = {
@@ -52,5 +52,5 @@ Disabled.args = {
   headingText: 'Hero Title',
   subText: 'Hero Subtitle',
   buttonText: 'Click Here',
-  primary: false,
+  primary: false
 }

@@ -20,11 +20,7 @@ export default {
   // collectCoverage: false,
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
-  collectCoverageFrom: [
-    'src/**/**/*.{js,jsx,ts,tsx}',
-    '!src/**/**/*.d.ts',
-    '!src/mocks/**',
-  ],
+  collectCoverageFrom: ['src/**/**/*.{js,jsx,ts,tsx}', '!src/**/**/*.d.ts', '!src/mocks/**'],
 
   // The directory where Jest should output its coverage files
   // coverageDirectory: undefined,
@@ -80,23 +76,14 @@ export default {
   // ],
 
   // An array of file extensions your modules use
-  moduleFileExtensions: [
-    'js',
-    'mjs',
-    'cjs',
-    'jsx',
-    'ts',
-    'tsx',
-    'json',
-    'node',
-  ],
+  moduleFileExtensions: ['js', 'mjs', 'cjs', 'jsx', 'ts', 'tsx', 'json', 'node'],
 
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
   moduleNameMapper: {
     '^react-native$': 'react-native-web',
     '^.+\\.module\\.(css|sass|scss|less)$': 'identity-obj-proxy',
     '\\.(jpg|ico|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
-      '<rootDir>/mocks/fileMock.js',
+      '<rootDir>/mocks/fileMock.js'
   },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
@@ -181,13 +168,13 @@ export default {
 
   // A map from regular expressions to paths to transformers
   transform: {
-    '^.+\\.(ts|js|tsx|jsx)$': '@swc/jest',
+    '^.+\\.(ts|js|tsx|jsx)$': '@swc/jest'
   },
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
   transformIgnorePatterns: [
     '[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$',
-    '^.+\\.module\\.(css|sass|scss)$',
+    '^.+\\.module\\.(css|sass|scss)$'
   ],
 
   // An array of regexp pattern strings that are matched against all modules before the module loader will automatically return a mock for them
@@ -199,10 +186,7 @@ export default {
   // An array of regexp patterns that are matched against all source file paths before re-running tests in watch mode
   // watchPathIgnorePatterns: [],
 
-  watchPlugins: [
-    'jest-watch-typeahead/filename',
-    'jest-watch-typeahead/testname',
-  ],
+  watchPlugins: ['jest-watch-typeahead/filename', 'jest-watch-typeahead/testname']
 
   // Whether to use watchman for file crawling
   // watchman: true,

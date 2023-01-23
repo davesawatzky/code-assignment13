@@ -8,10 +8,7 @@ import userEvent from '@testing-library/user-event'
 describe('Running Test for Dropdown', () => {
   test('Check placeholder in Dropdown', () => {
     render(<Dropdown placeholder='dropdown' />)
-    expect(screen.getByPlaceholderText('dropdown')).toHaveAttribute(
-      'placeholder',
-      'dropdown'
-    )
+    expect(screen.getByPlaceholderText('dropdown')).toHaveAttribute('placeholder', 'dropdown')
   })
 
   test('Check that Dropdown is visible', () => {
@@ -25,16 +22,12 @@ describe('Running Test for Dropdown', () => {
       screen.getByTestId('dropdown'),
       screen.getByRole('option', { name: 'Up' })
     )
-    expect(
-      screen.getByRole<HTMLOptionElement>('option', { name: 'Up' }).selected
-    ).toBe(true)
+    expect(screen.getByRole<HTMLOptionElement>('option', { name: 'Up' }).selected).toBe(true)
   })
 
   test('Dropdown is disabled', () => {
     render(<Dropdown data-testid='dropdown' disabled />)
     expect(screen.getByTestId('dropdown')).toBeDisabled()
-    expect(screen.getByTestId('dropdown')).toHaveStyle(
-      'background-color: #e4e4e4'
-    )
+    expect(screen.getByTestId('dropdown')).toHaveStyle('background-color: #e4e4e4')
   })
 })

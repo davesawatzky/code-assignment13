@@ -20,9 +20,7 @@ describe('Running Test for Table Row', () => {
         <TableCell>text</TableCell>
       </TableRow>
     )
-    expect(screen.getByRole('row', { name: 'text' })).toHaveStyle(
-      'background-color : #cecdcd'
-    )
+    expect(screen.getByRole('row', { name: 'text' })).toHaveStyle('background-color : #cecdcd')
   })
 
   test('Check Table Row shows error', () => {
@@ -31,8 +29,6 @@ describe('Running Test for Table Row', () => {
         <TableCell>text</TableCell>
       </TableRow>
     )
-    expect(screen.getByRole('row', { name: 'text' })).toHaveStyle(
-      'background-color : #ff5b4f'
-    )
+    expect(screen.getByRole('row', { name: 'text' })).toHaveStyle('background-color : #ff5b4f')
   })
 })

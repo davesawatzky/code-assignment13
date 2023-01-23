@@ -6,7 +6,7 @@ import { InputProps } from './Input.types'
 export default {
   title: 'Sawatzky/Input',
   component: Input,
-  argTypes: {},
+  argTypes: {}
 } as Meta<typeof Input>
 
 const Template: Story<InputProps> = (args) => <Input {...args} />
@@ -15,7 +15,7 @@ export const Primary = Template.bind({})
 Primary.args = {
   error: false,
   disabled: false,
-  label: 'Primary',
+  label: 'Primary'
 }
 
 export const Success = Template.bind({})
@@ -23,18 +23,18 @@ Success.args = {
   error: false,
   success: true,
   disabled: false,
-  label: 'Success',
+  label: 'Success'
 }
 
 export const Error = Template.bind({})
 Error.args = {
   error: true,
   disabled: false,
-  message: 'Error',
+  message: 'Error'
 }
 
 export const Disabled = Template.bind({})
 Disabled.args = {
   disabled: true,
-  label: 'Disabled',
+  label: 'Disabled'
 }

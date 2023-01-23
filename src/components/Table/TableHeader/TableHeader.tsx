@@ -14,12 +14,7 @@ const StyledTableHeaderCell = styled.th<TableHeaderProps>`
   border: 1px solid black;
 `
 
-const TableHeader: FC<TableHeaderProps> = ({
-  headings,
-  disabled,
-  error,
-  headerColor,
-}) => {
+const TableHeader: FC<TableHeaderProps> = ({ headings, disabled, error, headerColor }) => {
   return (
     <StyledTableHeader
       role={'rowgroup'}
@@ -29,10 +24,7 @@ const TableHeader: FC<TableHeaderProps> = ({
     >
       <StyledTableHeaderRow>
         {headings?.map((heading) => (
-          <StyledTableHeaderCell
-            key={heading.name}
-            colSpan={heading.columnSpan}
-          >
+          <StyledTableHeaderCell key={heading.name} colSpan={heading.columnSpan}>
             {heading.name}
           </StyledTableHeaderCell>
         ))}

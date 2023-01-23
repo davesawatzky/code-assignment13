@@ -6,7 +6,7 @@ import { ImageProps } from './Image.types'
 export default {
   title: 'Sawatzky/Image',
   component: Image,
-  argTypes: {},
+  argTypes: {}
 } as Meta<typeof Image>
 
 const Template: Story<ImageProps> = (args) => <Image {...args} />
@@ -17,7 +17,7 @@ Primary.args = {
   disabled: false,
   width: '300px',
   height: '',
-  source: 'src/assets/field.jpg',
+  source: 'src/assets/field.jpg'
 }
 
 export const Error = Template.bind({})
@@ -26,7 +26,7 @@ Error.args = {
   disabled: false,
   width: '100%',
   height: '',
-  source: 'src/assets/field.jpg',
+  source: 'src/assets/field.jpg'
 }
 export const Disabled = Template.bind({})
 Disabled.args = {
@@ -34,5 +34,5 @@ Disabled.args = {
   disabled: true,
   width: '100%',
   height: '',
-  source: 'src/assets/field.jpg',
+  source: 'src/assets/field.jpg'
 }
