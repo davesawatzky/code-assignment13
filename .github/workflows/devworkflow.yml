@@ -3,7 +3,9 @@ name: Development
 on:
 
   push:
-    branches: ['main', 'master]
+    branches: 
+    - 'main'
+    - 'master'
 
 jobs:
   lint:
