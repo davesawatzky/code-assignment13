@@ -2,13 +2,8 @@ name: Development
 
 on:
 
-  pull_request:
-    types:
-      - opened
-      - edited
-      - synchronize
-      - reopened
-  workflow_call:
+  push:
+    branches: ['main', 'master]
 
 jobs:
   lint:
